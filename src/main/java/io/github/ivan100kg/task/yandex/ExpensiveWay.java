@@ -45,7 +45,8 @@ public class ExpensiveWay implements Task {
             }
         }
 
-        writer.write(cacheMatrix[n-1][m-1] + "\n");
+        writer.write(String.valueOf(cacheMatrix[n-1][m-1]));
+        writer.newLine();
         writer.write(directionMatrix[n-1][m-1].trim());
 
         reader.close();
